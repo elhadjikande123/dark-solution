@@ -1,0 +1,176 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --accent: #007bff;
+}
+
+body.dark {
+  --bg: #111;
+  --text: #eee;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 5rem 2rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section Média */
+.media-video, .media-images {
+  margin-bottom: 2rem; /* Espacement sous chaque section */
+}
+
+.media-video video {
+  border-radius: 10px; /* Bordures arrondies pour la vidéo */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre légère autour de la vidéo */
+  width: 100%; /* Prend toute la largeur disponible */
+  height: auto; /* Garder les proportions de la vidéo */
+}
+
+.media-images .media-gallery {
+  display: grid; /* Utilisation de la grille pour organiser les images */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Créer des colonnes flexibles qui s'adaptent à la taille de l'écran */
+  gap: 1rem; /* Espacement entre les images */
+}
+
+.media-gallery img {
+  width: 100%; /* Prend toute la largeur de la colonne */
+  height: auto; /* Garde les proportions de l'image */
+  border-radius: 10px; /* Bordures arrondies pour les images */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre légère autour des images */
+  transition: transform 0.3s ease; /* Effet de transformation au survol */
+}
+
+.media-gallery img:hover {
+  transform: scale(1.05); /* Agrandir légèrement l'image au survol */
+}
+
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Pour que la vidéo de publicité soit toujours visible */
+.pub-media video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pub-media h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+/* Styling pour les éléments de navigation */
+.navbar a:hover {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}

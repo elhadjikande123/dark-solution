@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Altitude</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>Dark Altitude</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <nav class="navbar">
+    <a href="#pub">Publicité</a>
+    <a href="#home">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <h2>Bienvenue, je suis <span class="highlight">Elhadji kande sidibe</span></h2>
+    <p>Développeur Web | Créatif & Passionné</p>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>À propos</h2>
+    <p>Je crée des sites web modernes, performants et adaptés à vos besoins. Chaque projet est une collaboration, une rencontre entre votre vision et mon savoir-faire, pour donner vie à une présence en ligne qui vous ressemble</p>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Site E-commerce</h3>
+        <p>Boutique en ligne responsive avec panier intégré.</p>
+      </div>
+      <div class="project">
+        <h3>Application Portfolio</h3>
+        <p>Une app mobile cross-platform.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="media" class="section" data-aos="fade-up">
+    <h2>Nos Médias</h2>
+    
+    <!-- Section Vidéo -->
+    <div class="media-video">
+      <h3>Vidéo publicitaire</h3>
+      <video autoplay muted loop width="100%" poster="images/6.jpeg">
+        <source src="video/dark_pub.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+  
+    <!-- Section Images -->
+    <div class="media-images">
+      <h3>Nos Publicités</h3>
+      <div class="media-gallery">
+        <img src="images/4.jpeg" alt="Publicité 1">
+        <img src="images/5.jpeg" alt="Publicité 2">
+        <img src="images/7.jpeg" alt="Publicité 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contacte-moi</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  
+  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Mes Coordonnées</h3>
+        <p>Email : <a href="mailto:tonmail@gmail.com">eldikandebesidi@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+221777468083">+221 77 746 80 83</a></p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://wa.me/221777468083" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://web.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/elhadjikandesidibe/#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@dark.altitude?_t=ZM-8vcFfx8xepr&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true&&lipi=urn%3Ali%3Apage%3Aonboarding_start_index%3B3f1b5d39-baa2-481e-bc3e-f9f65c73d083" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
